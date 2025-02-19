@@ -4,6 +4,7 @@ channels:
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
+  - _x86_64-microarch-level=4=2_x86_64_v4
   - anyio=4.8.0=pyhd8ed1ab_0
   - argon2-cffi=23.1.0=pyhd8ed1ab_1
   - argon2-cffi-bindings=21.2.0=py311h9ecbd09_5
@@ -11,6 +12,8 @@ dependencies:
   - asttokens=3.0.0=pyhd8ed1ab_1
   - async-lru=2.0.4=pyhd8ed1ab_1
   - attrs=25.1.0=pyh71513ae_0
+  - awkward=2.7.4=pyhd8ed1ab_0
+  - awkward-cpp=44=py311hf8c1401_300
   - babel=2.17.0=pyhd8ed1ab_0
   - beautifulsoup4=4.13.3=pyha770c72_0
   - bleach=6.2.0=pyh29332c3_4
@@ -30,6 +33,7 @@ dependencies:
   - exceptiongroup=1.2.2=pyhd8ed1ab_1
   - executing=2.1.0=pyhd8ed1ab_1
   - fqdn=1.5.1=pyhd8ed1ab_1
+  - fsspec=2025.2.0=pyhd8ed1ab_0
   - h11=0.14.0=pyhd8ed1ab_1
   - h2=4.2.0=pyhd8ed1ab_0
   - hpack=4.1.0=pyhd8ed1ab_0
@@ -62,14 +66,20 @@ dependencies:
   - keyutils=1.6.1=h166bdaf_0
   - krb5=1.21.3=h659f571_0
   - ld_impl_linux-64=2.43=h712a8e2_2
+  - libblas=3.9.0=28_h59b9bed_openblas
+  - libcblas=3.9.0=28_he106b2a_openblas
   - libedit=3.1.20250104=pl5321h7949ede_0
   - libexpat=2.6.4=h5888daf_0
   - libffi=3.4.6=h2dba641_0
   - libgcc=14.2.0=h77fa898_1
   - libgcc-ng=14.2.0=h69a702a_1
+  - libgfortran=14.2.0=h69a702a_1
+  - libgfortran5=14.2.0=hd5240d6_1
   - libgomp=14.2.0=h77fa898_1
+  - liblapack=3.9.0=28_h7ac8fdf_openblas
   - liblzma=5.6.4=hb9d3cd8_0
   - libnsl=2.0.1=hd590300_0
+  - libopenblas=0.3.28=pthreads_h94d23a6_1
   - libsodium=1.0.20=h4ab18f5_0
   - libsqlite=3.48.0=hee588c1_1
   - libstdcxx=14.2.0=hc0a3c3a_1
@@ -88,6 +98,7 @@ dependencies:
   - nest-asyncio=1.6.0=pyhd8ed1ab_1
   - nodejs=22.12.0=hf235a45_0
   - notebook-shim=0.2.4=pyhd8ed1ab_1
+  - numpy=2.2.3=py311h5d046bc_0
   - openssl=3.4.1=h7b32b05_0
   - overrides=7.7.0=pyhd8ed1ab_1
   - packaging=24.2=pyhd8ed1ab_2
@@ -151,14 +162,13 @@ dependencies:
   - zstandard=0.23.0=py311hbc35293_1
   - zstd=1.5.6=ha6fb4c9_0
   - pip:
+    - coffea==0.7.25
+    - ipython==8.32.0
+    - jax==0.4.13
+    - jaxlib==0.4.13
     - joblib==1.4.2
-    - matplotlib==3.10.0
-    - mplhep==0.3.56
-    - numpy==2.2.2
-    - pandas==2.2.3
+    - pyhf==0.7.6
     - scikit-learn==1.6.1
-    - scipy==1.15.1
-    - tensorflow==2.14.0
-    - tqdm==4.67.1
+    - tensorflow==2.18.0
 
 prefix: "/scratch/gpfs/mg2708/micromamba/envs/NSBI_3_11"

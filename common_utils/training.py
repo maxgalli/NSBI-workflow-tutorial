@@ -102,7 +102,7 @@ class TrainEvaluatePreselNN:
                 json_file.write(model_json)
     
             # serialize weights to HDF5
-            self.model.save_weights(path_to_save+"model_weights_presel.h5")
+            self.model.save_weights(path_to_save+"model_weights_presel.weights.h5")
 
             saved_scaler = path_to_save+"model_scaler_presel.bin"
             dump(self.scaler, saved_scaler, compress=True)
@@ -118,7 +118,7 @@ class TrainEvaluatePreselNN:
 
         self.model = model_from_json(loaded_model_json)
 
-        self.model.load_weights(path_to_models+'/model_weights_presel.h5')
+        self.model.load_weights(path_to_models+'/model_weights_presel.weights.h5')
 
         self.model.compile(loss='sparse_categorical_crossentropy', optimizer='nadam')
 
@@ -256,7 +256,7 @@ class TrainEvaluate_NN:
             json_file.write(model_json)
 
         # serialize weights to HDF5
-        self.model_NN.save_weights(self.path_to_models+"model_weights.h5")
+        self.model_NN.save_weights(self.path_to_models+"model_weights.weights.h5")
 
         dump(self.scaler, saved_scaler, compress=True)
 
