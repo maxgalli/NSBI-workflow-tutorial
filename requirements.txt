@@ -1,0 +1,9 @@
+joblib==1.4.2
+matplotlib==3.10.0
+mplhep==0.3.56
+numpy==2.2.2
+pandas==2.2.3
+scikit_learn==1.6.1
+scipy==1.15.1
+tensorflow
+tqdm==4.67.1
