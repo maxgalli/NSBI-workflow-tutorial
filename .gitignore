@@ -1,3 +1,6 @@
 .ipynb_checkpoints/
 **/__pycache__/
 **/cached_data/
+cms_ttbar_open_data/output_*
+cms_ttbar_open_data/flows
+cms_ttbar_open_data/preselection_*
